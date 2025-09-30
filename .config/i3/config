@@ -217,13 +217,19 @@ bindsym $mod+Ctrl+Down resize shrink height 1 px or 1 ppt
 bindsym $mod+Ctrl+Left resize grow width 1 px or 1 ppt
 
 # Start picom on startx
-exec_always --no-startup-id picom -b --config ~/.config/picom/picom.conf
+exec_always --no-startup-id picom -b --config ~/.dotfiles/.config/picom/picom.conf
 
 # Switch to workspace
 bindsym $mod+bracketright workspace next
 bindsym $mod+bracketleft workspace prev
 
 for_window [class="^netbeans-.+"][window_type=dialog] focus
+
+# Active (focused) window border
+client.focused          #4c7899 #285577 #ffffff #2e9ef4  
+
+# Inactive (unfocused) window border
+client.unfocused        #333333 #222222 #888888 #292d2e
 
 
 # screenshoots

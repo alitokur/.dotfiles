@@ -1,3 +1,7 @@
+![Screenshot](./ss/ss.png)
+
+```bash
 git clone https://github.com/alitokur/.dotfiles.git ~/.dotfiles
 cd ~/.dotfiles
 git submodule update --init --recursive
+```
