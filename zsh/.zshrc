@@ -100,7 +100,8 @@ export LANG=en_US.UTF-8
 export EDITOR='nvim'
 # fi
 
-bindkey -e
+bindkey -v
+bindkey '^ ' autosuggest-accept
 # Compilation flags
 # export ARCHFLAGS="-arch x86_64"
 
@@ -110,7 +111,9 @@ bindkey -e
 # For a full list of active aliases, run `alias`.
 #
 # Example aliases
-# alias zshconfig="mate ~/.zshrc"
+alias zshconfig="nvim ~/.zshrc"
+alias vim="nvim"
+alias vi="nvim"
 # alias ohmyzsh="mate ~/.oh-my-zsh"
 
 source ~/.dotfiles/powerlevel10k/powerlevel10k.zsh-theme
@@ -121,14 +124,7 @@ source ~/.dotfiles/powerlevel10k/powerlevel10k.zsh-theme
 alias lc='colorls -lA --sd --dark'
 alias ls='colorls --sd --dark'
 
-alias position_monitor='java -jar "/home/alitokur/Softwares/position_monitor/dist/PositionMonitor.jar" -C /home/alitokur/network -M B3_BINARY -E Production'
-alias position_monitor_test='/usr/lib/jvm/jdk-19/bin/java -jar "/home/alitokur/projects/position_monitor/dist/PositionMonitor.jar" -C /home/alitokur/network -M XIST -E Test'
-alias pm_nse_test='/usr/lib/jvm/jdk-19/bin/java -jar "/home/alitokur/projects/position_monitor/dist/PositionMonitor.jar" -C /home/alitokur/network -M NSE -E Test'
-alias position_monitor_xist='/usr/lib/jvm/jdk-19/bin/java -jar "/home/alitokur/projects/position_monitor/dist/PositionMonitor.jar" -C /home/alitokur/network -M XIST -E Production'
-alias position_monitor_nse='java -jar "/home/alitokur/Softwares/position_monitor/dist/PositionMonitor.jar" -C /home/alitokur/network -M NSE -E Test'
-
 alias rsplot='java -jar "/home/alitokur/Softwares/research_studio/dist/ResearchStudio.jar"'
-
 
 export NVM_DIR="$HOME/.nvm"
 [ -s "$NVM_DIR/nvm.sh" ] && \. "$NVM_DIR/nvm.sh"  # This loads nvm
