@@ -101,7 +101,7 @@ export EDITOR='nvim'
 # fi
 
 bindkey -v
-bindkey '^ ' autosuggest-accept
+bindkey '^F' autosuggest-accept
 # Compilation flags
 # export ARCHFLAGS="-arch x86_64"
 
@@ -123,6 +123,12 @@ source ~/.dotfiles/powerlevel10k/powerlevel10k.zsh-theme
 
 alias lc='colorls -lA --sd --dark'
 alias ls='colorls --sd --dark'
+
+alias position_monitor='java -jar "/home/alitokur/Softwares/position_monitor/dist/PositionMonitor.jar" -C /home/alitokur/network -M B3_BINARY -E Production'
+alias position_monitor_test='/usr/lib/jvm/jdk-19/bin/java -jar "/home/alitokur/projects/position_monitor/dist/PositionMonitor.jar" -C /home/alitokur/network -M XIST -E Test'
+alias pm_nse_test='/usr/lib/jvm/jdk-19/bin/java -jar "/home/alitokur/projects/position_monitor/dist/PositionMonitor.jar" -C /home/alitokur/network -M NSE -E Test'
+alias position_monitor_xist='/usr/lib/jvm/jdk-19/bin/java -jar "/home/alitokur/projects/position_monitor/dist/PositionMonitor.jar" -C /home/alitokur/network -M XIST -E Production'
+alias position_monitor_nse='java -jar "/home/alitokur/Softwares/position_monitor/dist/PositionMonitor.jar" -C /home/alitokur/network -M NSE -E Test'
 
 alias rsplot='java -jar "/home/alitokur/Softwares/research_studio/dist/ResearchStudio.jar"'
 
